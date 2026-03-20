@@ -1,27 +1,21 @@
-module full_adder(input A,B,Cin,output Sum,Cout);
-wire w1,w2,w3;
-xor x1(Sum,A,B,Cin);
-and a1(w1,A,B);
-and a2(w2,B,Cin);
-and a3(w3,Cin,A);
-or o1(Cout,w1,w2,w3);
+module full_adder(input a,b,c,output sum,carry);
+assign sum = a^b^c;
+assign carry= a&b | b&c | c&a;
 endmodule
 module tb;
-  reg A, B, Cin;
-  wire Sum, Cout;
-
-  full_adder uut (.A(A), .B(B), .Cin(Cin), .Sum(Sum), .Cout(Cout));
-
-  initial begin
-    $monitor("A=%b B=%b Cin=%b | Sum=%b Cout=%b", A, B, Cin, Sum, Cout);
-    A=0; B=0; Cin=0; #10;
-    A=0; B=0; Cin=1; #10;
-    A=0; B=1; Cin=0; #10;
-    A=0; B=1; Cin=1; #10;
-    A=1; B=0; Cin=0; #10;
-    A=1; B=0; Cin=1; #10;
-    A=1; B=1; Cin=0; #10;
-    A=1; B=1; Cin=1; #10;
-    $finish;
-  end
+reg a,b,c;
+wire sum,carry;
+full_adder uut(a,b,c,sum,carry);
+initial begin
+$monitor("a=%b b=%b c=%b sum=%b carry=%b",a,b,c,sum,carry);
+a=0;b=0;c=0;#10;
+a=0;b=0;c=1;#10;
+a=0;b=1;c=0;#10;
+a=0;b=1;c=1;#10;
+a=1;b=0;c=0;#10;
+a=1;b=0;c=1;#10;
+a=1;b=1;c=0;#10;
+a=1;b=1;c=1;#10;
+$finish;
+end
 endmodule
