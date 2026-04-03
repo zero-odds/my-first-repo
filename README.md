@@ -21,6 +21,7 @@ Learning Verilog from the ground up. Building from fundamental logic gates to co
 - **D Flip-Flop (Asynchronous Reset)** – reset evaluates instantly, overriding the clock
 - **2-Stage Shift Register** – physical demonstration of Blocking (`=`) vs. Non-Blocking (`<=`) assignments
 - **4-Bit Register** – 4-bit wide parallel data storage with asynchronous reset
+- **4-Bit UP Counter** – counts from 0 to 15 with an active-high enable switch and synchronous reset
 
 ## ⏳ In Progress
 
