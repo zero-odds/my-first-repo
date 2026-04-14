@@ -30,8 +30,8 @@ Learning Verilog from the ground up. Building from fundamental logic gates to co
 ![ALU Waveforms](Week_3_ALU/images/alu_waveform.png)
 ![ALU Schematic](Week_3_ALU/images/alu_schematic.png)
 
-## ⏳ In Progress
-- **Week 4:** Finite State Machines (FSMs)
+### Week 4: Finite State Machines (`Week_4_FSM/`)
+- **Traffic Light Controller** - Designed a Moore Machine FSM to cycle through Green, Yellow, and Red states using an internal counter. Simulated and verified with Icarus Verilog.
 
 ## 🚀 Coming Soon
 - VGA Sync Generator (Week 5)
