@@ -32,6 +32,11 @@ Learning Verilog from the ground up. Building from fundamental logic gates to co
 
 ### Week 4: Finite State Machines (`Week_4_FSM/`)
 - **Traffic Light Controller** - Designed a Moore Machine FSM to cycle through Green, Yellow, and Red states using an internal counter. Simulated and verified with Icarus Verilog.
+## Hardware Synthesis & Simulation
+*Below: Behavioral simulation of the state transitions, and the physical gate-level RTL schematic.*
+
+![FSM Waveforms](./images/fsm_waveform.png)
+![FSM Schematic](./images/fsm_schematic.png)
 
 ## 🚀 Coming Soon
 - VGA Sync Generator (Week 5)
