@@ -1,4 +1,4 @@
-# Week 4: Finite State Machines (RTL Design)
+# 4: Finite State Machines (RTL Design)
 
 This folder contains the RTL logic, testbenches, and simulation data for synchronous Finite State Machine (FSM) projects developed in Verilog HDL. 
 
@@ -20,7 +20,7 @@ A synchronous FSM engineered to detect the sequence `1011` in a continuous seria
 ### Simulation & Verification
 The design was verified using a custom testbench (`seq_detector_tb.v`) applying a 10ns clock cycle. The stimulus tests both the standard sequence and overlapping edge cases to ensure state memory holds correctly.
 
-![Sequence Detector Waveform](seq_detector_waveform.png)
+![Sequence Detector Waveform](images/seq_detector_waveform.png)
 
 ---
 
@@ -33,7 +33,8 @@ RTL design for a standard 3-state Traffic Light Controller (Red, Yellow, Green).
 * **Architecture:** 3-State FSM 
 * **Tools Used:** Xilinx Vivado (Synthesis & Behavioral Simulation)
 
-![Traffic Light Simulation](fsm_schematic.png)
+![Traffic Light Simulation](images/fsm_schematic.png)
+![Traffic Light Simulation](images/fsm_waveform.png)
 
 ---
 ### How to Run These Projects
